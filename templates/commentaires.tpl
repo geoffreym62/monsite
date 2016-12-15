@@ -63,10 +63,10 @@
     <h2> Les Commentaires</h2>
 
 {foreach from=$tab_coms item=coms} 
-
-    <h4><span class="glyphicon glyphicon-user"></span> {$coms['pseudoCom']} </h4>
-    <h5><span class="glyphicon glyphicon-envelope"></span>  {$coms['emailCom']} </h5>
-    <h4><pre>{$coms['texteCom']} </pre> </h4>
+    
+    <h4><span class="glyphicon glyphicon-user"></span> {$coms['pseudoCom']} </h4> {* Avatar et pseudo  *}
+    <h5><span class="glyphicon glyphicon-envelope"></span>  {$coms['emailCom']} </h5> {* icone mail et le mail *}
+    <h4><pre>{$coms['texteCom']} </pre> </h4> {* 'pre' permet d'encadrer le texte  *}
 
 
 {/foreach}
